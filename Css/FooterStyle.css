@@ -51,6 +51,7 @@
     justify-content: center;
     gap: 25px;
     align-items: center;
+    margin-top: 10px;
 }
 
 .logo_baixo{
@@ -62,6 +63,12 @@
     align-items: center;
     height:50px;
     width: 50px;
+    transition: 0.5s;
+}
+
+.logo_baixo:hover{
+
+    transform: translateY(-10px);
 }
 
 .logo_baixo img, .logo_baixo svg {
