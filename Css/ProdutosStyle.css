@@ -167,9 +167,10 @@ a{
 
 .produtos_c{
     display: flex;
-    gap: 50px;
+    gap: 40px;
     padding: 20px 10px;
     padding-left: 120px;
+    margin-right: 100px;
 }
 
 .imagem_produto{
@@ -198,6 +199,12 @@ a{
     color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px 10px;
+    transition: 0.5s;
+}
+
+.botao_comprar:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
 }
 
 .produto{
@@ -213,3 +220,9 @@ a{
     text-align: center;
     transition: all 0.3s ease;
 }
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
