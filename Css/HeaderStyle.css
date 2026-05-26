@@ -60,7 +60,7 @@ a{
 .icones{
     margin-top: 10px;
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: 30px;
 }
 
 .icon{
@@ -69,9 +69,35 @@ a{
     transition: .5s;
 }
 
+.icone_cart{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+#cart{
+    height: 20px;
+    width: 40px;
+    transition: .5s;
+    filter: invert(86%) sepia(82%) saturate(497%) hue-rotate(345deg) brightness(330%) contrast(98%);
+}
+
+.icone_cart:hover {
+    filter: brightness(90%);
+    animation: pulse 1s infinite;
+}
+
 .icon:hover{
     color: rgba(255, 240, 76, 0.8);
     animation: pulse 1s infinite;
+}
+
+.botao_cart{
+    background-color: transparent;
+    border: none;
+    transition: .5s;
 }
 
 @keyframes pulse {
