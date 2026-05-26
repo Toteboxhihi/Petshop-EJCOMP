@@ -18,14 +18,15 @@ function atualizarInterfaceCarrinho() {
 
         carrinho.forEach(item => {
             const itemDiv = document.createElement('div');
-            itemDiv.classList.add('item_carrinho');
-            itemDiv.innerHTML = `<span>${item.nome}</span> <span>R$ ${item.preco.toFixed(2)}</span>`;
+            itemDiv.classList.add('item_carrinho'); 
+            itemDiv.style.margin = "10px 0px 30px 0px";
+            itemDiv.innerHTML = `<span><h3>${item.nome}</h3></span> <span style="margin-left: 15px;"><h5>R$ ${item.preco.toFixed(2)}</h5></span>`;
             itensCarrinho.appendChild(itemDiv);
 
             total += item.preco;
         })
 
-        totalCarrinho.innerHTML = `Total: R$ ${total.toFixed(2)}`;
+        totalCarrinho.innerHTML = `<h3>Total:</h3> <h5>R$ ${total.toFixed(2)}</h5>`;
     }
 
 }
