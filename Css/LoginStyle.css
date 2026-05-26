@@ -34,7 +34,7 @@ body{
     justify-content: center; 
 } 
 
-.buttonEntrar{ 
+#buttonEntrar{ 
     background-color: rgb(244, 230, 87); 
     color: rgba(82, 6, 137); 
     border-style: none; 
@@ -42,13 +42,13 @@ body{
     padding: 5px 0px 3px 0px;
 } 
 
-.inputEmail{ 
+.text_input{ 
     border: 2px solid rgba(82, 6, 137); 
     padding: 5px; 
     border-radius: 10px; 
 }  
 
-.inputEmail:focus{  
+.text_input:focus{  
     outline: none;
     border: 2px solid rgba(82, 6, 137); 
 }

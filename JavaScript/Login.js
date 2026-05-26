@@ -1,8 +1,4 @@
-const submit = document.getElementsByClassName("submit_button")[0];
-submit.addEventListener('click', enterUser);
-
 let usuarios = [];
-
 for(var i = 0; i < 5; i++){
     let usuario = {};
     usuario.nome = "usuario"+i;
@@ -11,15 +7,17 @@ for(var i = 0; i < 5; i++){
 }
 
 console.log(usuarios);
+const botao = document.getElementById("buttonEntrar");
 
-function enterUser(event){
+botao.addEventListener('click', function(event){
     event.preventDefault();
-    text_inputs = event.target.parentElement.parentElement.getElementsByClassName("text_input");
+    usuario = document.getElementsByClassName("text_input")[0]; 
+    senha = document.getElementsByClassName("text_input")[1]; 
 
     controle = true;
 
     for(var i = 0; i < 5; i++){
-        if(usuarios.at(i).nome == text_inputs[0].value && usuarios.at(i).senha == text_inputs[1].value){
+        if(usuarios.at(i).nome == usuario.value && usuarios.at(i).senha == senha.value){
             alert("Bem vindo!");
             controle = false;
             window.location.href = "home.html";
@@ -28,4 +26,4 @@ function enterUser(event){
     }
     if(controle)
         alert("Usuário não cadastrado!");
-}
+})

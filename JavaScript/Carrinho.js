@@ -9,8 +9,7 @@ function atualizarInterfaceCarrinho() {
     if (carrinho.length === 0) {
         caixaVazia.classList.remove('escondido');
         caixaCheia.classList.add('escondido');
-    }
-    else {
+    } else {
         caixaVazia.classList.add('escondido');
         caixaCheia.classList.remove('escondido');
 
@@ -41,7 +40,20 @@ function limparCarrinho() {
 
 function adicionarAoCarrinho(nome, preco) {
     let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    carrinho.push({ nome, preco });
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    alert(`${nome} adicionado ao carrinho!`);
+    let produto = { nome, preco }; 
+    let quantidadeProduto = 0;
+    
+    carrinho.forEach(function(item){ 
+        if(item.nome === produto.nome && item.preco === item.preco){ 
+            quantidadeProduto++;
+        }
+    });
+    
+    if(quantidadeProduto < 4){
+        carrinho.push(produto);
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        alert(`${nome} adicionado ao carrinho!`); 
+    }else{ 
+        alert("Estoque vazio para esse item!");
+    }
 }
