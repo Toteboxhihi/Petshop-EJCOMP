@@ -9,7 +9,7 @@ export default function HeaderComponent(){
         <header> 
                 <section>
                     <figure>
-                        <img src="../Images/logoPet.jpg" id="Logo" alt="Logo Pet" />
+                        <img src="../Images/logoPet.png" id="Logo" alt="Logo Pet" />
                     </figure>           
                 </section>
                 <section className="botoes_topo">
@@ -35,7 +35,7 @@ export default function HeaderComponent(){
                 <section className="icone_cart">
                     <button className="botao_cart">
                          <Link to="/Carrinho">
-                            <img src="../Images/CarrinhoCompras.png" id="cart" alt="Carrinho" />
+                            <img src="/Images/CarrinhoCompras.png" id="cart" alt="Carrinho" />
                          </Link>
                     </button>
                 </section>
