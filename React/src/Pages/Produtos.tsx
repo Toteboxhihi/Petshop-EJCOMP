@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import FooterComponent from "./Utils/FooterComponent";
 import HeaderComponent from "./Utils/HeaderComponent";
 
+// @ts-ignore
+import './ProdutosStyle.css'
+
 
 interface ItemCarrinho {
     nome: string;
@@ -36,55 +39,10 @@ function adicinarAoCarrinho(nome : string, preco : number) : void {
 
 export default function Produtos() {
     return (
-        <>
-{/*        <HeaderComponent />
-        <FooterComponent />
-        <header> 
-            <section>
-                <figure>
-                    <img src="../Images/logoPet.png" id="Logo" alt="Logo Pet"/>
-                </figure>           
-            </section>
-            <section className="botoes_topo">
-                    <Link to="/Produtos">
-                        <button className="botao_topo">
-                            Produtos
-                        </button>
-                    </Link>
-                    <Link to="/Servicos">
-                        <button className="botao_topo">
-                            Serviços
-                        </button>
-                    </Link>
-                    <Link to="/SobreNos">
-                        <button className="botao_topo">
-                            Sobre nós
-                        </button>
-                    </Link>
-                    <Link to="/OndeEstamos">
-                        <button className="botao_topo">
-                            Onde estamos
-                        </button>
-                    </Link>
-                    <Link to="/Login">
-                        <button className="botao_topo">
-                            Login
-                        </button>
-                    </Link>
-            </section>
-            <section className="icones">
-                <Link to=""> <i className="icon material-symbols-outlined">search</i> </Link>
-            </section>
-            <section className="icone_cart">
-                <button className="botao_cart">
-                     <Link to="/Carrinho">
-                        <img src="../Images/CarrinhoCompras.png" id="cart"/>
-                     </Link>
-                </button>
-            </section>
-        </header>
-*/}
-    <main> 
+<>
+        <HeaderComponent />
+        
+        <main>
         <section>
             <figure>
                 <img src="../Images/Brown & Gold Playful Minimalist Pet Presentation.png" id="ad_produtos"/>
@@ -316,57 +274,12 @@ export default function Produtos() {
                 </div>
              </section>
         </section>
-    </main>
-
-{/*
-    <footer>
-        <div className="footer_cima">
-            <section className="logos_baixo">
-                <button className="logo_baixo">
-                    <figure>
-                        <img src="../Images/whatsapp.png" id="Logo_baixo"/>
-                    </figure>
-                </button>
-                <button className="logo_baixo">
-                    <figure>
-                        <img src="../Images/facebook.png" id="Logo_baixo"/>
-                    </figure>
-                </button>
-                <button className="logo_baixo">
-                    <figure>
-                        <img src="../Images/instagram.png" id="Logo_baixo"/>
-                    </figure>
-                </button>
-            </section>
-            <section className="botoes_baixo">
-                <Link to="Home">
-                    <button className="botao_baixo">
-                        Home
-                    </button>
-                </Link>
-                <Link to="SobreNos">
-                    <button className="botao_baixo">
-                        Sobre nós
-                    </button>
-                </Link>
-                <Link to="OndeEstamos">
-                    <button className="botao_baixo">
-                        Contatos
-                    </button>
-                </Link>
-            </section>
-        </div>
+    
+        </main>
         
-        <div>
-        <section className="footer_baixo">
-            <p className="footer_texto">
-                Copyright © 2024 EJPET. Todos os direitos reservados.
-            </p>
-        </section>
-        </div>
-    </footer>
+    <FooterComponent />
 
-*/}
+
 
     </>
     )
