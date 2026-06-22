@@ -6,6 +6,8 @@ import Login from "./Pages/Login"
 import OndeEstamos from "./Pages/OndeEstamos"
 import Produtos from "./Pages/Produtos"
 import Servicos from "./Pages/Servicos"
+import HeaderComponent from "./Pages/Utils/HeaderComponent"
+import FooterComponent from "./Pages/Utils/FooterComponent"
 
 function App(){
   return (

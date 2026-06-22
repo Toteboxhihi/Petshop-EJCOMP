@@ -2,14 +2,16 @@ import { Link } from "react-router-dom";
 // @ts-ignore
 import './HomeStyle.css';
 // @ts-ignore
-import './HeaderStyle.css';
-// @ts-ignore
-import './FooterStyle.css';
+import './Utils/FooterStyle.css';
+
+import HeaderComponent from "./Utils/HeaderComponent";
+import FooterComponent from "./Utils/FooterComponent";
 
 export default function Home() {
     return (
         <>
-            <header> 
+            <HeaderComponent />
+{/*            <header> 
                 <section>
                     <figure>
                         <img src="../Images/logoPet.png" id="Logo" alt="Logo Pet" />
@@ -43,7 +45,7 @@ export default function Home() {
                     </button>
                 </section>
             </header>
-
+            */}
             <main> 
                 <section>
                     <figure className="figura_frente">
@@ -52,7 +54,9 @@ export default function Home() {
                 </section>    
             </main>
             
-            <footer>
+            <FooterComponent />
+{
+/*            <footer>
                 <div className="footer_cima">
                     <section className="logos_baixo">
                         <button className="logo_baixo">
@@ -92,6 +96,7 @@ export default function Home() {
                     </section>
                 </div>
             </footer>
-        </>
+            */}
+    </>
     );
 }

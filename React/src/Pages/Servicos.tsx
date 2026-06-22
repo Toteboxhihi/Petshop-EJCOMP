@@ -1,3 +1,11 @@
-export default function servicos() {
+import FooterComponent from "./Utils/FooterComponent";
+import HeaderComponent from "./Utils/HeaderComponent";
 
+export default function servicos() {
+    return (
+        <>
+            <HeaderComponent />
+            <FooterComponent />
+        </>
+    );
 }
