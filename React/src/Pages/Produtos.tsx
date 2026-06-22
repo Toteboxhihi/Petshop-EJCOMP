@@ -34,10 +34,10 @@ function adicinarAoCarrinho(nome : string, preco : number) : void {
 
 } 
 
-export default function produtos() {
+export default function Produtos() {
     return (
         <>
-        <HeaderComponent />
+{/*        <HeaderComponent />
         <FooterComponent />
         <header> 
             <section>
@@ -83,6 +83,7 @@ export default function produtos() {
                 </button>
             </section>
         </header>
+*/}
     <main> 
         <section>
             <figure>
@@ -317,6 +318,7 @@ export default function produtos() {
         </section>
     </main>
 
+{/*
     <footer>
         <div className="footer_cima">
             <section className="logos_baixo">
@@ -363,6 +365,9 @@ export default function produtos() {
         </section>
         </div>
     </footer>
+
+*/}
+
     </>
     )
 }
