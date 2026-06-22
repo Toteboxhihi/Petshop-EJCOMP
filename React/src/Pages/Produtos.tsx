@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import FooterComponent from "./Utils/FooterComponent";
+import HeaderComponent from "./Utils/HeaderComponent";
 
 
 interface ItemCarrinho {
@@ -35,6 +37,8 @@ function adicinarAoCarrinho(nome : string, preco : number) : void {
 export default function produtos() {
     return (
         <>
+        <HeaderComponent />
+        <FooterComponent />
         <header> 
             <section>
                 <figure>
