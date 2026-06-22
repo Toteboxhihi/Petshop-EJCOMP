@@ -1,0 +1,53 @@
+.title{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.subtitle{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+.text_info{
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color:rgb(244, 230, 87, 0.5);
+    padding: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(82, 6, 137);
+}
+.mapa{
+    padding: 2%;
+    border-radius: 20px;
+    max-width: max-content;
+    margin-left: 8%;
+    text-align: center;
+    background-color: rgb(82, 6, 137);
+}
+.contato{
+    margin: 5%;
+    margin-left: 0%;
+}
+.horario{
+    max-width: 50%;
+    margin-left:2%;
+    margin-right: 8%;
+    color: rgb(244, 230, 87);
+}
+#Endereco{
+    padding-left: 6%;
+    display: flex;
+}
+
+#Mapa{
+    display: flex;
+}
+#iFrameMapa{
+    border: 0;
+    width: 600px;
+    height: 450px;
+}
+#Contatos{
+    display: flex; 
+    padding-left: 6%;
+}

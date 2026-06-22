@@ -1,0 +1,11 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+    background-color: aliceblue;
+} 
+
+main{
+    background-color: rgb(179, 148, 219);
+    display: contents;
+}
