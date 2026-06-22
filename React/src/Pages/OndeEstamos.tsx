@@ -13,7 +13,8 @@ export default function OndeEstamos() {
         <>
             <HeaderComponent />
             
-            <main> 
+            <main>
+             
                 <h1 className="title">Onde Estamos:</h1>
                 <h2 className="subtitle"> Endereço: </h2>
                 <section id="Endereco" >

@@ -12,7 +12,8 @@ export default function Servicos() {
         <>
             <HeaderComponent />
 
-            <main> 
+            <main>
+
                 <section>
                     <figure>
                         <img src="../Images/Brown & Gold Playful Minimalist Pet Presentation.png" id="ad_produtos" alt="Main Image"/>
