@@ -1,0 +1,93 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+}
+header{
+    background-color: rgb(82, 6, 137);
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ad_produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    width: 100%;
+}
+
+.titulo_categoria {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px; /* Reduzido um pouco para não quebrar em telas menores */
+    color: rgb(0, 0, 0);
+    padding: 0 40px;
+    margin-top: 30px;
+}
+
+
+.imagem_produto{
+    height: 230px;
+    width: 170px;
+    border-radius: 10%;
+}
+
+.preco_produto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(41, 40, 38);
+    text-align: center;
+}
+
+.botao_comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(82, 6, 137);
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 10px;
+    transition: 0.5s;
+}
+
+.botao_comprar:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.produtos_c {
+    display: flex;
+    flex-wrap: wrap;       /* ESSENCIAL: Faz os cards quebrarem linha */
+    justify-content: center; /* Centraliza os cards na tela */
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;        /* Remove as margens fixas que quebram o layout */
+    max-width: 1200px;     /* Limita a largura máxima da vitrine */
+}
+
+/* Garante que o card tenha um tamanho padrão e não estique */
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px; 
+    text-align: center;
+    width: 220px;          /* Define uma largura fixa para os cards ficarem simétricos */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
