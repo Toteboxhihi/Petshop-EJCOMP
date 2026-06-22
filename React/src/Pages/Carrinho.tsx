@@ -7,6 +7,7 @@ export default function Carrinho() {
 return (
     <>
         <HeaderComponent />
+            
         <FooterComponent />
     </>
     );
