@@ -12,7 +12,7 @@ export default function Login() {
     <>
         <HeaderComponent />
         
-        <main>  
+          
             <section className="containerLogin">
                 <form id="loginForm">  
                     <img src="../Images/logoPet.png" className="logoLogin" alt="Logo Petshop"/>
@@ -39,7 +39,7 @@ export default function Login() {
                     </section>          
                 </form> 
             </section>
-        </main>
+        
 
         <FooterComponent />
     </>

@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 // @ts-ignore
 import './HomeStyle.css';
-// @ts-ignore
-import './Utils/FooterStyle.css';
+//@ts-ignore
+import "./Utils/MainStyle.css";
+
 
 import HeaderComponent from "./Utils/HeaderComponent";
 import FooterComponent from "./Utils/FooterComponent";
@@ -46,13 +47,13 @@ export default function Home() {
                 </section>
             </header>
             */}
-            <main> 
+             
                 <section>
                     <figure className="figura_frente">
                         <img src="../Images/frente_petshop.png" id="frente_petshop" alt="Frente Petshop" />
                     </figure>
                 </section>    
-            </main>
+            
             
             <FooterComponent />
 {
