@@ -1,11 +1,14 @@
-body{
+body {
     padding: 0%;
     margin: 0%;
     border: 0px;
     background-color: aliceblue;
 } 
 
-main{
-    background-color: rgb(179, 148, 219);
-    display: contents;
+main {
+    display: block;
+    width: 100%;
+    min-height: calc(100vh - 350px); /* Garante que o rodapé fique embaixo mesmo em telas vazias */
+    background-color: aliceblue;
+    box-sizing: border-box;
 }
