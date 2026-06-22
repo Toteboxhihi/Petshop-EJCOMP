@@ -279,8 +279,6 @@ export default function Produtos() {
         
     <FooterComponent />
 
-
-
     </>
     )
 }
